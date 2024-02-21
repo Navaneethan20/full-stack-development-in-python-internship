@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <!-- You can include additional meta tags, link to stylesheets, or add other head elements here -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <header>
-        <h1>Your Website Title</h1>
-        <!-- You can add a navigation menu or other header content here -->
-    </header>
-
-    <main>
-        <section>
-            <h2>Section Heading</h2>
-            <p>This is a paragraph of text in your main content section.</p>
-        </section>
-
-        <!-- You can add more sections, articles, or content as needed -->
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
-        <!-- You can add additional footer content or links here -->
-    </footer>
-
+<div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <span id="usernameError" class="error"></span>
+    <input type="email" id="email" placeholder="Email">
+    <span id="emailError" class="error"></span>
+    <input type="password" id="password" placeholder="Password">
+    <span id="passwordError" class="error"></span>
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
+
